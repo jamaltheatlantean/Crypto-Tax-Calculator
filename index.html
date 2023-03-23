@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crypto Tax Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Crypto Tax CalculaDtor</h1>
+    <form>
+      <label for="crypto">Select Crypto:</label>
+      <select id="crypto" name="crypto">
+        <option value="BTC">Bitcoin</option>
+        <option value="ETH">Ethereum</option>
+        <option value="LTC">Litecoin</option>
+      </select><br><br>
+
+      <label for="amount">Enter Amount:</label>
+      <input type="number" id="amount" name="amount"><br><br>
+
+      <label for="date">Choose Date:</label>
+      <input type="date" id="date" name="date"><br><br>
+
+      <button type="button" onclick="calculateTax()">Calculate Tax</button><br><br>
+
+      <label for="tax">Tax Amount:</label>
+      <input type="text" id="tax" name="tax" readonly><br><br>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
