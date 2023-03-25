@@ -3,30 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <title>Crypto Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>Crypto Tax Calculator</h1>
     <form>
-      <form>
-        <label for="crypto">Select the cryptocurrency:</label>
-        <select id="crypto">
-          <option value="bitcoin">Bitcoin (BTC)</option>
-          <option value="ethereum">Ethereum (ETH)</option>
-          <option value="litecoin">Litecoin (LTC)</option>
-        </select>
-      
-        <label for="amount-usd">Enter the value of the purchased amount in USD:</label>
-        <input type="number" id="amount-usd" required>
-      
-        <label for="sold-usd">Enter the value of the sold amount in USD:</label>
-        <input type="number" id="sold-usd" required>
-      
-        <label for="date">Select the date of the cryptocurrency purchase:</label>
-        <input type="date" id="date" required>
-      
-        <button type="submit">Calculate</button>
-      </form>
-      
-      <div id="result"></div>
+      <label for="crypto">Crypto:</label>
+      <select id="crypto">
+        <option value="BTC">Bitcoin (BTC)</option>
+        <option value="ETH">Ethereum (ETH)</option>
+        <option value="LTC">Litecoin (LTC)</option>
+        <!-- Add more options here for other cryptos -->
+      </select>
+      <br>
+      <label for="amount">Amount Purchased (USD):</label>
+      <input type="number" id="amount" step="any">
+      <br>
+      <label for="sold">Amount Sold (USD):</label>
+      <input type="number" id="sold" step="any">
+      <br>
+      <label for="purchaseDate">Purchase Date:</label>
+      <input type="date" id="purchaseDate">
+      <br>
+      <label for="saleDate">Sale Date:</label>
+      <input type="date" id="saleDate">
+      <br>
+      <button type="submit">Calculate Tax</button>
+    </form>
+    <h2>Tax Result:</h2>
+    <div id="result"></div>
+    <footer>
+      Powered by BitQuery, made by Jamaltheatlantean!
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
